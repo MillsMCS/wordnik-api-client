@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.threeten.bp.LocalDate;
+import org.threeten.bp.OffsetDateTime;
 
 /**
  * AudioFile
@@ -40,7 +40,7 @@ public class AudioFile {
   private Integer commentCount = null;
 
   @JsonProperty("createdAt")
-  private LocalDate createdAt = null;
+  private OffsetDateTime createdAt = null;
 
   @JsonProperty("createdBy")
   private String createdBy = null;
@@ -141,7 +141,7 @@ public class AudioFile {
     this.commentCount = commentCount;
   }
 
-  public AudioFile createdAt(LocalDate createdAt) {
+  public AudioFile createdAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -151,11 +151,11 @@ public class AudioFile {
    * @return createdAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getCreatedAt() {
+  public OffsetDateTime getCreatedAt() {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

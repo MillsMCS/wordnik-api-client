@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.threeten.bp.LocalDate;
+import org.threeten.bp.OffsetDateTime;
 
 /**
  * WordListWord
@@ -28,7 +28,7 @@ import org.threeten.bp.LocalDate;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-04-10T17:59:52.032-07:00")
 public class WordListWord {
   @JsonProperty("createdAt")
-  private LocalDate createdAt = null;
+  private OffsetDateTime createdAt = null;
 
   @JsonProperty("id")
   private Long id = null;
@@ -48,7 +48,7 @@ public class WordListWord {
   @JsonProperty("word")
   private String word = null;
 
-  public WordListWord createdAt(LocalDate createdAt) {
+  public WordListWord createdAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -58,11 +58,11 @@ public class WordListWord {
    * @return createdAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getCreatedAt() {
+  public OffsetDateTime getCreatedAt() {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

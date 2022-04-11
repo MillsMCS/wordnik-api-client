@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
 import java.util.List;
-import org.threeten.bp.LocalDate;
+import org.threeten.bp.OffsetDateTime;
 
 /**
  * WordOfTheDay
@@ -37,7 +37,7 @@ public class WordOfTheDay {
   private ContentProvider contentProvider = null;
 
   @JsonProperty("createdAt")
-  private LocalDate createdAt = null;
+  private OffsetDateTime createdAt = null;
 
   @JsonProperty("createdBy")
   private String createdBy = null;
@@ -61,7 +61,7 @@ public class WordOfTheDay {
   private String parentId = null;
 
   @JsonProperty("publishDate")
-  private LocalDate publishDate = null;
+  private OffsetDateTime publishDate = null;
 
   @JsonProperty("word")
   private String word = null;
@@ -102,7 +102,7 @@ public class WordOfTheDay {
     this.contentProvider = contentProvider;
   }
 
-  public WordOfTheDay createdAt(LocalDate createdAt) {
+  public WordOfTheDay createdAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -112,11 +112,11 @@ public class WordOfTheDay {
    * @return createdAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getCreatedAt() {
+  public OffsetDateTime getCreatedAt() {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
@@ -262,7 +262,7 @@ public class WordOfTheDay {
     this.parentId = parentId;
   }
 
-  public WordOfTheDay publishDate(LocalDate publishDate) {
+  public WordOfTheDay publishDate(OffsetDateTime publishDate) {
     this.publishDate = publishDate;
     return this;
   }
@@ -272,11 +272,11 @@ public class WordOfTheDay {
    * @return publishDate
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getPublishDate() {
+  public OffsetDateTime getPublishDate() {
     return publishDate;
   }
 
-  public void setPublishDate(LocalDate publishDate) {
+  public void setPublishDate(OffsetDateTime publishDate) {
     this.publishDate = publishDate;
   }
 

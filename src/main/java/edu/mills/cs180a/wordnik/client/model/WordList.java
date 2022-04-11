@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.threeten.bp.LocalDate;
+import org.threeten.bp.OffsetDateTime;
 
 /**
  * WordList
@@ -28,7 +28,7 @@ import org.threeten.bp.LocalDate;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-04-10T17:59:52.032-07:00")
 public class WordList {
   @JsonProperty("createdAt")
-  private LocalDate createdAt = null;
+  private OffsetDateTime createdAt = null;
 
   @JsonProperty("description")
   private String description = null;
@@ -37,7 +37,7 @@ public class WordList {
   private Long id = null;
 
   @JsonProperty("lastActivityAt")
-  private LocalDate lastActivityAt = null;
+  private OffsetDateTime lastActivityAt = null;
 
   @JsonProperty("name")
   private String name = null;
@@ -52,7 +52,7 @@ public class WordList {
   private String type = null;
 
   @JsonProperty("updatedAt")
-  private LocalDate updatedAt = null;
+  private OffsetDateTime updatedAt = null;
 
   @JsonProperty("userId")
   private Long userId = null;
@@ -60,7 +60,7 @@ public class WordList {
   @JsonProperty("username")
   private String username = null;
 
-  public WordList createdAt(LocalDate createdAt) {
+  public WordList createdAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -70,11 +70,11 @@ public class WordList {
    * @return createdAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getCreatedAt() {
+  public OffsetDateTime getCreatedAt() {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
@@ -114,7 +114,7 @@ public class WordList {
     this.id = id;
   }
 
-  public WordList lastActivityAt(LocalDate lastActivityAt) {
+  public WordList lastActivityAt(OffsetDateTime lastActivityAt) {
     this.lastActivityAt = lastActivityAt;
     return this;
   }
@@ -124,11 +124,11 @@ public class WordList {
    * @return lastActivityAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getLastActivityAt() {
+  public OffsetDateTime getLastActivityAt() {
     return lastActivityAt;
   }
 
-  public void setLastActivityAt(LocalDate lastActivityAt) {
+  public void setLastActivityAt(OffsetDateTime lastActivityAt) {
     this.lastActivityAt = lastActivityAt;
   }
 
@@ -204,7 +204,7 @@ public class WordList {
     this.type = type;
   }
 
-  public WordList updatedAt(LocalDate updatedAt) {
+  public WordList updatedAt(OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -214,11 +214,11 @@ public class WordList {
    * @return updatedAt
   **/
   @ApiModelProperty(value = "")
-  public LocalDate getUpdatedAt() {
+  public OffsetDateTime getUpdatedAt() {
     return updatedAt;
   }
 
-  public void setUpdatedAt(LocalDate updatedAt) {
+  public void setUpdatedAt(OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
