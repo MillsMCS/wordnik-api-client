@@ -10,7 +10,7 @@ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar \
   --model-package edu.mills.cs180a.wordnik.client.model \
   --invoker-package edu.mills.cs180a.wordnik.client.invoker \
   --group-id cs180a --artifact-id wordnik-api-client \
-  --artifact-version 0.0.1-SNAPSHOT  
+  --artifact-version 0.0.1-SNAPSHOT \
   -l java  --library feign -o wordnik-api-client
 ```
 I then modified `pom.xml` to:
